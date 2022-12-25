@@ -1,0 +1,18 @@
+# ======================== Elasticsearch Configuration =========================
+ingest.geoip.downloader.enabled: false
+path.data: /data/elasticsearch
+path.logs: /var/log/elasticsearch
+node.name: SiTech-ElasticSearch
+discovery.type: single-node
+network.host: 0.0.0.0
+http.host: 0.0.0.0
+http.port: 9200
+#----------------------- BEGIN SECURITY AUTO CONFIGURATION -----------------------
+# Enable security features
+xpack.security.enabled: true
+xpack.security.enrollment.enabled: false
+xpack.security.http.ssl:
+  enabled: false
+xpack.security.transport.ssl:
+  enabled: false
+#----------------------- END SECURITY AUTO CONFIGURATION -------------------------
