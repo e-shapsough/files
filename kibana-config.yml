@@ -1,0 +1,21 @@
+elasticsearch.username: "kibana_system"
+elasticsearch.password: "KIBANA_SYSTEM_PASSWORD"
+server.host: "0.0.0.0"
+server.publicBaseUrl: "KIBANA_URL"
+server.name: "Kibana-SiTech"
+elasticsearch.hosts: ["http://127.0.0.1:9200"]
+xpack.encryptedSavedObjects.encryptionKey: ENC_KEY_1
+xpack.reporting.encryptionKey: ENC_KEY_2
+xpack.security.encryptionKey: ENC_KEY_3
+logging:
+  appenders:
+    file:
+      type: file
+      fileName: /var/log/kibana/kibana.log
+      layout:
+        type: json
+  root:
+    appenders:
+      - default
+      - file
+pid.file: /run/kibana/kibana.pid
