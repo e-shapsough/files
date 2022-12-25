@@ -1,7 +1,7 @@
 elasticsearch.username: "kibana_system"
 elasticsearch.password: "KIBANA_SYSTEM_PASSWORD"
 server.host: "0.0.0.0"
-server.publicBaseUrl: "KIBANA_URL"
+server.publicBaseUrl: "https://KIBANA_URL"
 server.name: "Kibana-SiTech"
 elasticsearch.hosts: ["http://127.0.0.1:9200"]
 xpack.encryptedSavedObjects.encryptionKey: ENC_KEY_1
